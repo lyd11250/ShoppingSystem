@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to left bottom, #c0e2fc, #f3fafc);
+    z-index: -1;
+}
+
+.search {
+    width: 720px;
+    height: 50px;
+    margin-top: 50px;
+    display: flex;
+    padding: 2px;
+    border: 2px solid #33A6B8;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+#searchTab {
+    width: 80px;
+    height: 100%;
+    padding: 0;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    text-align: right;
+}
+
+#searchText {
+    width: 560px;
+    border: none;
+    border-left: 1px solid darkgray;
+    outline: none;
+    background-color: transparent;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+
+.search button {
+    width: 80px;
+    height: 100%;
+    font-size: 20px;
+    border: none;
+    border-radius: 55px;
+}
+
+.search button:hover {
+}
+
+.content {
+    width: 1200px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #f3f3ff;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 150px;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    flex-flow: wrap;
+}
+
+.sortBox {
+    width: 300px;
+    height: 370px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.sortBox h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.sortBox p {
+    font-size: 20px;
+    margin: 10px 0px 10px;
+    color: dimgrey;
+}
+
+.promo {
+    width: 520px;
+    height: 370px;
+    background-color: #fff;
+    margin-left: 20px;
+    border-radius: 15px;
+    background-image: url('https://img.alicdn.com/imgextra/i3/6000000000414/O1CN01mCa9eA1EvejjLS5Ta_!!6000000000414-0-octopus.jpg');
+}
+
+.userBox {
+    width: 300px;
+    height: 370px;
+    border-radius: 15px;
+    margin-left: 20px;
+    background: linear-gradient(#33A6B8 30%, #fff 30%);
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.userBox .userHead {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-top: 50px;
+    background: url("//wwc.alicdn.com/avatar/getAvatar.do?userNick=&width=60&height=60&type=sns&_input_charset=UTF-8");
+}
+
+.userBox .username,
+.userBox .password,
+.userBox .btn {
+    width: 70%;
+    height: 40px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.userBox .username,
+.userBox .password {
+    border: 1px solid #33A6B8;
+    padding-left: 10px;
+}
+
+.btn {
+    border: none;
+    background-color: #33A6B8;
+    color: #f3fafc;
+}
+
+.btn:hover {
+    background-color: #66BAB7;
+}
+
+.recommend {
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    background-color: red;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: wrap;
+}
