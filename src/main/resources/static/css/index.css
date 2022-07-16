@@ -102,6 +102,7 @@ body {
     background-color: #fff;
     margin-left: 20px;
     border-radius: 15px;
+    cursor: pointer;
     background-image: url('https://img.alicdn.com/imgextra/i3/6000000000414/O1CN01mCa9eA1EvejjLS5Ta_!!6000000000414-0-octopus.jpg');
 }
 
@@ -154,10 +155,46 @@ body {
 
 .recommend {
     width: 100%;
-    height: 500px;
     border-radius: 15px;
-    background-color: red;
+    box-sizing: border-box;
     margin-top: 20px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.recommendCard {
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 160px auto;
+    grid-column-gap: 20px;
+    padding: 20px;
     flex-flow: wrap;
+}
+
+.recommendCard:hover {
+    cursor: pointer;
+    border: 2px solid #33A6B8;
+}
+
+.recommendCard .goodImg {
+    height: 100%;
+    background-color: #33A6B8;
+    border-radius: 10px;
+}
+
+.recommendCard .goodInfo {
+    display: grid;
+    grid-template-rows: auto 30px;
+    grid-row-gap: 20px;
+}
+
+.recommendCard .goodPrice {
+    font-size: 25px;
+    line-height: 30px;
+    color: #33A6B8;
 }
